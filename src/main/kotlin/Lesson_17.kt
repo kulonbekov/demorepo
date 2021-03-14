@@ -2,7 +2,7 @@
 fun main(){
 
     val max = getMax(5,6)
-    val max2 = getMax(5,6,7)
+    val max2 = getMax(5.0,6.0,7.0)
     val max1 = getMax(5.0,6.0)
     println(max)
     println(max1)
@@ -21,7 +21,7 @@ fun getMax(num1: Int, num2: Int): Int{
 
     return if(num1 > num1) num1 else num2
 }
-fun getMax(num1: Int, num2: Int, num3: Int): Int{
+fun getMax(num1: Double, num2: Double, num3: Double): Double {
 
     return  when{
         num1> num2 && num1>num3 ->num1
