@@ -1,5 +1,5 @@
 fun main(){
-    val cat = Cat("Kotik", 4)
+    val cat = Cat1("Kotik", 4)
     val eat = Eat("Plov", "Vtoroe blyudo")
     val paper = Paper()
     val boiler = Boiler()
@@ -11,7 +11,7 @@ fun main(){
     val companyMember = CompanyMember()
 
 }
-class Cat(val name: String, val age: Int){
+class Cat1(val name: String, val age: Int){
 
 }
 class Eat(val name:String, val kindOffood: String){
