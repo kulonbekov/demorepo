@@ -1,43 +1,75 @@
 fun main(){
-    val cat = Cat1("Kotik", 4)
+    val cat1 = Cat1("Kotik", 4)
+    val cat2 = Cat1("Fix", 4)
     val eat = Eat("Plov", "Vtoroe blyudo")
-    val paper = Paper()
-    val boiler = Boiler()
-    val battery = Battery()
-    val liquid = Liquid()
-    val cup = Cup()
-    val box = Box()
-    val student = Student()
-    val companyMember = CompanyMember()
+    val paper = Paper("A4")
+    val boiler = Boiler("19 litr")
+    val battery = Battery("Durasel")
+    val liquid = Liquid("Voda")
+    val cup = Cup("Krujka")
+    val box = Box("Fedex")
+    val student = Student("Ivan")
+    val companyMember = CompanyMember("Analitik")
+
+
+    println(cat1.toString())
+    println(cat1.hashCode())
+    println(cat1 == cat2)
+
+    println(eat.toString())
+    println(eat.hashCode())
+
+    println(paper.toString())
+    println(paper.hashCode())
+
+    println(boiler.toString())
+    println(boiler.hashCode())
+
+    println(battery.toString())
+    println(battery.hashCode())
+
+    println(liquid.toString())
+    println(liquid.hashCode())
+
+    println(cup.toString())
+    println(cup.hashCode())
+
+    println(box.toString())
+    println(box.hashCode())
+
+    println(student.toString())
+    println(student.hashCode())
+
+    println(companyMember.toString())
+    println(companyMember.hashCode())
+}
+data class Cat1(val name: String, val age: Int){
 
 }
-class Cat1(val name: String, val age: Int){
+data class Eat(val name:String, val kindOfFood: String){
 
 }
-class Eat(val name:String, val kindOffood: String){
+data class Paper(val name:String){
 
 }
-class Paper(){
+data class Boiler(val name:String){
 
 }
-class Boiler(){
+data class Battery(val name:String,){
 
 }
-class Battery(){
+data class Liquid(val name:String,){
 
 }
-class Liquid(){
+data class Cup(val name:String,){
 
 }
-class Cup(){
+data class Box(val name:String,){
 
 }
-class Box(){
+data class Student(val name:String,){
 
 }
-class Student(){
-
-}
-class CompanyMember(){
+data class CompanyMember(val name:String,){
 
 }
