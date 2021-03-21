@@ -11,7 +11,9 @@ fun main(){
     employee.introduceYourSelf()
 }
 
-open class Person(val name: String, val surName: String, val age: Int){
+open class Person(val name: String,
+                  val surName: String,
+                  val age: Int){
 
     open fun introduceYourSelf(){
         println("my Name is $name")
